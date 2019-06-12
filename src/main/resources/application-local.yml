@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL94Dialect
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://dave.nexr.com:26257/examdb?sslmode=disable
+    username: dave
+    password:
+
+server:
+  port: 8081
+
+profiles: local
